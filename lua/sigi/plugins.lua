@@ -46,8 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   --colorschemes  
-  use "gruvbox-community/gruvbox" -- color scheme from gruv 
-  
+  use { "catppuccin/nvim", as = "catppuccin" }
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -73,6 +72,9 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer 
   
+  --solidity
+  use "tomlion/vim-solidity"
+  use "prettier/vim-prettier"
   -- Telescope
   -- Telescope
   use "nvim-telescope/telescope.nvim"
